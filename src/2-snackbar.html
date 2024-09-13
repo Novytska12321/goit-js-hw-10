@@ -12,6 +12,7 @@
       src="./partials/header.html"
       icon-path="./img/sprite.svg#logo"
       highlight-curr="active"
+     
     />
 
     <main>
@@ -21,6 +22,27 @@
         </h1>
         <load src="./partials/back-link.html" />
       </div>
+      <form class="form">
+        <label class="form-label" for="delay">Delay (ms)</label>
+          <span class="label-text"></span>
+          <input class="form-input" type="number" name="delay" id="delay" required />
+        
+      
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+      
+        <button type="submit">Create notification</button>
+      </form>
+<script type="module" src="./js/2-snackbar.js"></script>
     </main>
 
     <load src="./partials/footer.html" />
